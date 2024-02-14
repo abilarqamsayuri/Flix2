@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.LoginActivity">
+
+    <TextView
+        android:id="@+id/TV"
+        android:layout_width="334dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/poppins"
+        android:text="Register"
+        android:textColor="@color/purple_500"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/RegisterLayoutFirst"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="149dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/username"
+        app:boxStrokeColor="@color/purple_500"
+        app:boxStrokeWidth="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/EmailLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/Button4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName|textEmailAddress"
+            android:textColor="@color/purple_500"
+            android:textColorHint="@color/intro_title_color"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/RegisterLayoutLast"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="149dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/username"
+        app:boxStrokeColor="@color/purple_500"
+        app:boxStrokeWidth="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/EmailLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/Button4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName|textEmailAddress"
+            android:textColor="@color/purple_500"
+            android:textColorHint="@color/intro_title_color"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EmailLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="331dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/username"
+        app:boxStrokeColor="@color/purple_500"
+        app:boxStrokeWidth="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/Button4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Your Email"
+            android:inputType="textPersonName|textEmailAddress"
+            android:textColor="@color/purple_500"
+            android:textColorHint="@color/intro_title_color"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputPass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="331dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/password"
+        app:boxStrokeColor="@color/purple_500"
+        app:boxStrokeWidth="1dp"
+        app:endIconMode="password_toggle"
+        app:layout_constraintBottom_toTopOf="@+id/textInputReferal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/Button4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Create Password"
+            android:inputType="textPassword"
+            android:textColor="@color/purple_500"
+            android:textColorHint="@color/intro_title_color"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="244dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputReferal"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="331dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="100dp"
+        android:hint="@string/password"
+        app:boxStrokeColor="@color/purple_500"
+        app:boxStrokeWidth="1dp"
+        app:endIconMode="password_toggle"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/Button4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etVReferal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Referal Password"
+            android:inputType="textPassword"
+            android:textColor="@color/purple_500"
+            android:textColorHint="@color/intro_title_color"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="244dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegister"
+        style="@android:style/Widget.Button"
+        android:layout_width="331dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/purple_button2_bg"
+        android:fontFamily="@font/poppins"
+        android:text="Register"
+        android:textColor="@color/whitesmoke"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        style="@android:style/Widget.Button"
+        android:layout_width="331dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/purple_button_bg"
+        android:fontFamily="@font/poppins"
+        android:text="Login"
+        android:textColor="@color/purple_500"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
